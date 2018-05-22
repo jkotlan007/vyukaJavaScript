@@ -1,0 +1,20 @@
+{
+  "name": "instagram-api",
+  "version": "1.0.0",
+  "description": "výuka nodejs",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "instagram"
+  ],
+  "author": "Jaroslav Kotlán",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "instagram-node": "^0.5.8"
+  }
+}
