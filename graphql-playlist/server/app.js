@@ -8,5 +8,5 @@ app.use('/graphql',graphqlHTTP({
 }))
 
 app.listen(4000,()=> {
-    console.log('Nyní posloucháš na portu 4000');
+    console.log('Nyní posloucháme na portu 4000');
 })
