@@ -1,6 +1,13 @@
 const graphql = require('graphql');
+const _ = require('lodash');
 
 const {GraphQLObjectType, GraphQLString, GraphQLSchema} = graphql;
+
+let books = [
+    {name:'Saturnin', genre:'Komedie', id:'1'},
+    {name:'Star wars', genre:'Komedie', id:'2'},
+    {name:'Pejsek a kočička', genre:'Pohádka', id:'3'}
+];
 
 const BookType = new GraphQLObjectType({
     name:'Book',
@@ -19,7 +26,7 @@ const RootQuery = new GraphQLObjectType({
             args:{id:{type: GraphQLString}},
             resolve(parent,args){
                 //získání dat z databáze neno odjinud
-
+            return _.find(books, {id: args.id})
             }
         }
     }
