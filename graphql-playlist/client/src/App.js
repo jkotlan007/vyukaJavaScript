@@ -13,7 +13,7 @@ const client = new ApolloClient({
 class App extends Component {
   render() {
     return (
-      <ApolloProvider clien={client}>
+      <ApolloProvider client={client}>
         <div id="main">
           <h1>Jardův seznam knih</h1>
           <BookList/>
